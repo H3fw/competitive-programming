@@ -2,13 +2,11 @@
 
 Soluções para diversos problemas de programação competitiva escritos em C++ ou Python.
 
-Todas as soluções são autorais e feitas sem o uso de LLM's
+Todas autorais e feitas sem o uso de LLM's
 
 <br>
 
 ---
-
-<br>
 
 um agradecimento para :<br>
 
