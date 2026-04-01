@@ -5,7 +5,9 @@ Soluções para diversos problemas de programação competitiva escritos em C++ 
 Todas as soluções são autorais e feitas sem o uso de LLM's
 
 <br>
+
 ---
+
 <br>
 
 um agradecimento para :<br>
