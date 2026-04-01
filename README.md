@@ -7,6 +7,7 @@ Todas as soluções são autorais e feitas sem o uso de LLM's
 <br>
 ---
 <br>
+
 um agradecimento para :<br>
 
 Max<br>
