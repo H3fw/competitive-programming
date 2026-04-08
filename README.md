@@ -14,6 +14,7 @@ Max<br>
 Eduardo "Emoreira"<br>
 Enzo "Zenzo 🐐"<br>
 João Marcos "Rondon"<br>
+Gabriel "Bras" <br>
 João Marcos "Joaozão"<br>
 Eric<br>
 E todo o pessoal do Brute UDESC
