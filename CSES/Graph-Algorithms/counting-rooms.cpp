@@ -10,22 +10,32 @@ void solve() {
   int n, m;
   cin >> n >> m;
 
-  vector<vector<char>> roomMap(m, vector<char>(n));
-  for (int i = 0; i < m; i++) {
-    cout << "building line " << i << ": ";
-    for (int j = 0; i < n; j++) {
+  vector<vector<char>> roomMap(n, vector<char>(m));
+
+  for (int i = 0; i < n; i++) {
+    for (int j = 0; j < m; j++) {
       cin >> roomMap[i][j];
-      cout << "- " << roomMap[i][j];
     }
   }
 
-  for (auto a : roomMap) {
-    cout << "line 1: ";
-    for (auto b : a) {
-      cout << b;
+  int count = 0;
+  for (int i = 0; i < n; i++) {
+    for (int j = 0; j < m; j++) {
+      if (roomMap[i][j] == '#')
+        continue;
+      if (roomMap[i - 1][j] == '/' or roomMap[i + 1][j] == '/' or
+          roomMap[i][j - 1] == '/' or roomMap[i][j + 1] == '/') {
+        roomMap[i][j] = '/';
+        continue;
+      }
+      if (roomMap[i][j] == '.') {
+        roomMap[i][j] = '/';
+        count++;
+      }
     }
-    cout << endl;
   }
+
+  cout << count << endl;
 }
 
 int main() {
