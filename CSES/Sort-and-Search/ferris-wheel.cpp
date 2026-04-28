@@ -7,34 +7,30 @@ using namespace std;
 #define endl '\n'
 
 void solve() {
-  ll n, x;
+  int n, x;
   cin >> n >> x;
 
   vector<int> childs(n);
-  for (ll i = 0; i < n; i++)
+  for (int i = 0; i < n; i++)
     cin >> childs[i];
 
   sort(childs.begin(), childs.end());
 
-  int j = 0;
-  int g = 0;
-  while (!childs.empty()) {
-    if (childs.size() == 1) {
-      g++;
+  int count = 0;
+  int beginPointer = 0;
+
+  for (int i = n - 1; i >= 0; i--) {
+    if (beginPointer > i) {
       break;
     }
-
-    if (childs.front() + childs.back() <= x) {
-      g++;
-      childs.pop_back();
-      childs.erase(childs.begin());
-      continue;
-    }
-    childs.pop_back();
-    g++;
+    if (childs[i] + childs[beginPointer] <= x) {
+      count++;
+      beginPointer++;
+    } else
+      count++;
   }
 
-  cout << g << endl;
+  cout << count << endl;
 }
 
 int main() {

@@ -16,7 +16,8 @@ void solve() {
     int px, py;
     cin >> px >> py;
     int x1 = px / r;
-    int x2 = px / r + 1
+    int x2 = px / r + 1;
+    int y1 = px / sqrt(3) * r
   }
 }
 
